@@ -1,4 +1,658 @@
-name: daviddarnes
-markdown: alembic
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site navigation
 
-theme: jekyll-theme-cayman
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- screenshot.png
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- alembic-jekyll-theme.gemspec
+
+# 2. Installed Gems
+plugins:
+- jekyll-sitemap
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jekyll-feed
+- jemoji
+
+# 3. Gem settings
+paginate: 2 # jekyll-paginate > items per page
+paginate_path: blog/page:num # jekyll-paginate > blog page
+jekyll-mentions: https://twitter.com # jekyll-mentions > service used when @replying
+twitter:
+  username: DavidDarnes # jekyll-seo-tag > Owners twitter username
+author: DavidDarnes # jekyll-seo-tag > default author
+social: # jekyll-seo-tag > social overrides
+  name: David Darnes # jekyll-seo-tag > real name
+  links:  # jekyll-seo-tag > social aliases (sameAs)
+    - https://twitter.com/DavidDarnes
+    - https://www.facebook.com/daviddarnes
+    - https://www.linkedin.com/in/daviddarnes
+    - https://plus.google.com/+DavidDarnes
+    - https://github.com/daviddarnes
+
+# 4. Jekyll settings
+sass:
+  style: compressed # Style compression
+permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone: Europe/London # Timezone for blog posts and alike
+
+# 5. Collections
+collections:
+  posts:
+    title: Posts # Needed for Siteleaf
+    output: true
+    description: "My thoughts and ideas" # The post list page content
+    feature_text: |
+      Welcome to the blog
+    feature_image: "https://picsum.photos/2560/600?image=866"
+
+# 6. Jekyll collections settings
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "/assets/default-social-image.png" # Default image for sharing
+
+Last login: Tue Aug 28 09:43:37 on ttys001
+[XIEs-MacBook-Air:~] xie% scp xie@159.226.170.55:~/Work/rampressure/figure/all_*mf.eps Downloads/
+scp: No match.
+[XIEs-MacBook-Air:~] xie% scp xie@159.226.170.55:~/Work/rampressure/figure/all_\*mf.eps Downloads/
+/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+manpath: can't set the locale; make sure $LC_* and $LANG are correct
+all_h2mf.eps                                                                      100%   25KB 906.3KB/s   00:00    
+all_himf.eps                                                                      100%   23KB   2.0MB/s   00:00    
+all_smf.eps                                                                       100%   33KB   2.2MB/s   00:00    
+[XIEs-MacBook-Air:~] xie% scp xie@159.226.170.55:~/Work/rampressure/figure/all_\*mf.eps Downloads/
+/etc/profile.d/lang.sh: line 19: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+manpath: can't set the locale; make sure $LC_* and $LANG are correct
+all_h2mf.eps                                                                      100%   26KB   1.2MB/s   00:00    
+all_himf.eps                                                                      100%   25KB   2.1MB/s   00:00    
+all_smf.eps                                                                       100%   34KB   2.6MB/s   00:00    
+[XIEs-MacBook-Air:~] xie% ls
+AnacondaProjects		Pictures			output_sizegrow.txt
+Desktop				Public				pythonoutput.txt.npy
+Documents			anaconda2			pythonplot.py
+Dowloads?est.py			id_rsa.pub			pythonwritetest.npy
+Downloads			id_rsa.pub.pub			resolution.png
+Library				lzxie@lapoderosa.oats.inaf.it	see.png
+Movies				ouput.npy			test.py
+Music				output.txt			百度云同步盘
+[XIEs-MacBook-Air:~] xie% cd Downloads/
+[XIEs-MacBook-Air:~/Downloads] xie% ls
+%E5%9B%BD%E5%AE%B6%E5%A4%A9%E6%96%87%E5%8F%B0%E6%80%BB%E9%83%A8%E4%BB%BB%E5%8A%A1%E7%BB%A9%E6%95%88%E7%94%B3%E8%AF%B7%E5%A4%87%E6%A1%88%E8%A1%A8.doc
+00STScI16_athanassoula.pdf
+0707.3514v2.pdf
+07878812228bcf993b87c64cd7697dc9.log
+08650f48c9ef7c69de8e87cd21d7db4c.log
+1-赵永恒.ppt
+10.1.1.29.9238.ps
+1006.0106-3.pdf
+10kpc_outflow.pdf
+1112.3340v3.pdf
+1409.6791.pdf
+1412.2712.pdf
+1439792891.jpg
+1507.08950.pdf
+1509.08473.pdf
+1605.01489.pdf
+1606.01908.pdf
+161009828.pdf
+1611.07524.tar.gz
+1611.07672.pdf
+1612.06891.pdf
+161201101.pdf
+1705.0306read.pdf
+1705.03839.pdf
+1708.02744.pdf
+1808.01043.pdf
+2017Summer.docx
+20180301085439963967.doc
+201805xstb.xlsx
+2083888296.jpg
+312295008.jpg
+654254main_v1220j_H264l.mp4
+784070762.jpg
+7e8f6e03bbfa9ef9cfcdbeb7ec25e63c.log
+96
+?program.pdf
+A3+%E5%A4%A9%E6%B4%A5%E5%B8%88%E8%8C%83%E5%A4%A7%E5%AD%A6%E4%BA%BA%E6%89%8D%E8%81%98%E4%BB%BB%E7%BB%BC%E5%90%88%E8%AF%84%E4%BB%B7%E8%A1%A820171102.doc
+A963_HI_For_Gabriella.dat
+Adguard.release.dmg
+AdobeFlashPlayer_24_ast_install.dmg
+AdobeFlashPlayer_25au_ast_install.dmg
+Anaconda2-4.3.1-MacOSX-x86_64.sh
+Andromeda_Galaxy_(with_h-alpha).jpg
+B5FF39DB888D30E2F87DA7AA01A_48E695FE_14200.doc
+BHburpingtwice.pdf
+Behroozi_2013_ApJL_762_L31.pdf
+CHRIS6.pdf
+Collocazione_Macroaree-v2_xie.pdf
+DLA.png
+DLA_2D.pro
+DSC_1267-03.jpeg
+FPlayer.dmg
+Frontiers-and-Controversies-in-Astrophysics 2
+GitHub Desktop.app
+HBTplus-MPI-Hydro
+HI2014.bekki.ppt
+HIMS.png
+HI_distribution.pdf
+HI_distribution.ps
+HIdef.pdf
+HIdef_sizemass.ps
+Hmstar
+IMF_Zhang_2018_slides.pptx
+IMG_20161027_220347.jpg
+IOPEXPORT_BIB.bib
+Iocco_GdR-Saclay.ppt
+Kimm_2014_ApJ_788_121.pdf
+Krumholz_sf_review.pdf
+LH_WEBCKI.GB.PORTAL.X1OaCTxP8r80D57EBmLoI7.pdf
+Linea 8-2.pdf
+Linea 8.pdf
+M101_hires_STScI-PRC2006-10a.jpg
+MEMBERS TEAM CV_Xie.docx
+MEMBERS TEAM CV_Xie.pages
+MEMBERS TEAM CV_template.docx
+MNRAS-2017-Schaefer-121-42.pdf
+MQRF-2018-EoI-Form-2.docx
+MQRF-2018-EoI-Form.docx
+MQRF-2018-EoI-Form_FINAL.docx
+MQRF-2018-EoI-Form_Xie.pdf
+MQRF-2018-EoI-Form_Xie_v1_Richard.pdf
+MQRF-2018-EoI-Form_Xie_v2_Richard.pdf
+Makefile
+Mb_f.ps
+Mendeley-Desktop-1.19.1-OSX-Universal.dmg
+MhiDHI.eps
+ModuloRichiestaDisdetta_gen12.pdf
+Mstar_dis_z2.ps
+NGC2207+IC2163.jpg
+NGC2623_prog.ps
+Nozbe-3.app
+Nozbe.app
+OH_dis_z2.ps
+OneDrive-2018-04-26-2
+P020170615548089409750.docx
+P020170615548089795211.xls
+PASP_115_809_763.pdf
+PHR.pro
+Phase_referencing_VLBI_astrometry_observation_syst.pdf
+Pictures
+Planck_CMB.jpg
+RESEARCH REPORT_xie_2017.pdf
+Re MNRAS MN-17-3986-MJ
+Re_ Paper on size evolution vs environment in models, using HAGGIS data for comparison among others..eml
+Reply to Referee Report 1.pdf
+Report.pdf
+Research Statement Analysis.pdf
+SFR_dis_z2.ps
+STGW_qwang.pdf
+Schruba_2011_The_Astronomical_Journal_142_37.pdf
+Screenshot from 2018-01-22 09-48-37.png
+Slides_Lagos.pdf
+Slides_Yates.pdf
+Tese_Astro_Bem_AFSF_Final.pdf
+The formation of the heaviest elements.pdf
+Tonnesen_W2016_DW.ppt
+UGC08107_prog.ps
+UGC10205_prog.ps
+VidyoConnect
+VidyoConnectInstaller-macosx-TAG_VCOND_18_2_2_4147[p=https&h=inaf.vidyocloud.com&f=RzpJUENPOklQQ0k6TW9kOlRMUzpQQzpQdWJDOkNEUjpFUDpDUDpSUEk6QkE6TkRDOkNQUjpTUjI6U1I6VFA=&r=FDCjHcfLy0].dmg
+Void_statistics_and_void_galaxies_in_the_2dF_Galax.pdf.download
+WeChat_2.3.17.18.dmg
+WhatShapesGalaxies_DeLucia.ppt
+Xie2014.pdf
+Xie2017.pdf
+YY3---YYSCIYYYSCIYYYYYYYYYYYY2014Y1Y1YYYYYYYY.pdf
+Zpath.pro
+a780f47c82602d0af3f7d261a4b26bf8.log
+alembic-kit-remote-theme
+all_gzmstar.ps
+all_h2mf.eps
+all_himf.eps
+all_sizesfr.ps
+all_smf.eps
+all_smf.ps
+analog_distribution.ps
+analog_gassize_sfr_modelbr06_sat.ps
+analog_size_ha.png
+analog_size_haggis.png
+analog_size_sfr_ha.png
+analog_size_sfr_haggis.png
+analog_size_sfr_modelk13_sat.png
+cluster_sat_obs.eps
+clusterlenseREVIEW.pdf
+comments_rampressure.pdf
+compare.pdf
+compare.png
+compare_AGN.pdf
+compare_HAGGIS.pdf
+compare_HAGGIS_ha3.pdf
+compare_Ha3.pdf
+compare_satevo.eps
+compare_satsize.eps
+contribution_central_etg.ps
+contribution_sat_etg.ps
+contribution_sat_spiral.ps
+cover_letter_shi.tex
+cv.pdf
+cv_LizhiXie 中文.pdf
+cv_Xie.pdf
+cv_lizhi_gab.pdf
+data
+data_from_sdss_dr7.sav
+dataforYuheng.tar.gz
+def.pdf
+def_size.pdf
+defplot.pro
+densityfunction.pro
+doc02250420180424103331.pdf
+doc02250520180424103350.pdf
+doc02250620180424103422.pdf
+doc02250720180424103515.pdf
+doc02250820180424103528.pdf
+doc02250920180424104206.pdf
+doc02251020180424104219.pdf
+download_resize_jpg.jpeg
+draft_12.pdf
+draft_8 copy.pdf
+draft_Com_Xie.pdf
+edge_califa.csv
+eduroam科技云通行证用户使用说明.pdf
+environment-disc-sizes
+environment-disc-sizes-4
+environment-disc-sizes-R3.zip
+environment-disc-sizes.pdf
+environment-disc-sizes.pdf.download
+environment-disc-sizes_R2.zip
+environment-disc-sizes_revised
+environment-disc-sizes_revised.pdf
+environment-disc-sizes_revised.zip
+environment-disc-sizes_revised_xie
+environment-disc-sizes_revised_xie.zip
+environment-disc-sizes_sec5.2.pdf
+environment-disc-sizes_v5.pdf
+environment-disk-sizes
+environment-disk-sizes-2.pdf
+environment-disk-sizes-28112017.pdf
+environment-disk-sizes-3.pdf
+environment-disk-sizes-4.pdf
+environment-disk-sizes-5.pdf
+environment-disk-sizes.pdf
+environment-disk-sizes.zip
+environment-disk-sizes_041117_comments_DW.pdf
+fhalo.pdf
+fig_rhoH2_z_lp.png
+figure
+figure-2.pdf
+figure-3.pdf
+figure-4.pdf
+figure-5.pdf
+figure-6.pdf
+figure.pdf
+figure_sfrsize
+figure_withrps.pdf
+fraction.ps
+gasmetal.zip
+gasrich_h2.pdf
+gasrich_h2.ps
+grow.ps
+grow_ms2.pdf
+grow_vmax.pdf
+grow_vmax2.2_2.4.pdf
+grow_vmax2.4_2.6.pdf
+grow_vmax_Ha3.pdf
+grow_vmax_all.pdf
+gzmstar.pro
+gzmstarplot.pro
+h2sam.pdf
+haggis_sigmastar_profiles_wfi
+haggis_sigmastar_profiles_wfi.tar
+heic9902o.jpg
+henanmeeting_slides
+hs-2015-02-a-hires_jpg.jpg
+image001.png
+imf.pro
+imf_galform.pdf
+imfvar_xie.pdf
+imfvar_xie15102017.pdf
+instability.pro
+instability0.ps
+instability1.ps
+invitation_wanglan2.pdf
+invoice.pdf
+libXaw3d-1.6
+living_on_titan.wps
+logo.gif.png
+logo_oats.gif.png
+mactex-basictex-20170607.pkg
+main.c
+main_zoldan_2018.pdf
+main_zoldan_2018_with_corrections.pdf
+mandc-1.03main
+mandc-1.03main.tar
+mandc_10643
+mastercard-send-infographic-02.16.pdf
+mf_Millennium_BR06_z.4.ps
+mnras0389-1619.pdf
+mnras0403-1413-SD1
+msENV4.pdf
+msENV4mock.pdf
+nature14167-pf1.ppt
+newtx
+noterdaeme.dat
+noterdaeme_all.dat
+notes-size
+notes-size-2.pdf
+notes-size-3.pdf
+notes-size-4.pdf
+notes-size.pdf
+notes-size_xie_13102017
+notes-size_xie_13102017.zip
+notes_size_lizhi
+notes_size_lizhi.zip
+orangepie.jpg
+output_mil
+paper.pdf
+payment.jpg
+plotdata
+profiles_z_0.0.png
+prog_sat.pdf
+prog_sat_ha3haggis.pdf
+quenchfrac_compare.eps
+quenchfrac_compare_-10.3.eps
+quenchfrac_compare_-10.5.eps
+quenchtime.eps
+quenchtime_-10.3.eps
+quenchtime_-10.5.eps
+quenchtime_all.eps
+ram-pressure-2.pdf
+ram-pressure-3.pdf
+ram-pressure.pdf
+readtree.pro
+recipe_mergers.c
+reply-to-referee.pdf
+reply-to-referee_gab.pdf
+reply.pdf
+reply_R2.pdf
+reply_gab.pdf
+replytoreferee.pdf
+replytoreferee_gab.pdf
+replytorefereereprot.odt
+research plan.pages
+research plan.pdf
+research statement.pages
+researchplan-2.pdf
+researchplan-3.pdf
+researchplan-4.pdf
+researchplan.pdf
+researchplan_11052017_gab.pdf
+researchplan_Xie.pdf
+researchplan_lizhi_gab.pdf
+researchstatement_lizhi_gab.pdf
+rpsfrac_model.eps
+sfh_H2.pdf
+sfr.pdf
+sfr_commentsMH-2.pdf
+sfr_commentsMH.pdf
+sfr_ring_den_H2.pdf
+sfr_sec5.tex
+sfrdistribution.eps
+singlesatevo.eps
+size-2.pdf
+size-2.tex
+size-3.tex
+size_03052017.pdf
+size_0409.tex
+size_0709.tex
+size_0909.tex
+size_1209_2.tex
+size_growth_central.ps
+size_growth_central_zoom.ps
+size_growth_sat.ps
+size_growth_sat_zoom.ps
+size_paper.pdf
+size_xie_2.tex
+size_xie_v3.tex
+slides
+stu513-2.pdf
+stu513-3.pdf
+stu513-4.pdf
+stu513.pdf
+sty2131.pdf
+testJ_figure.pdf
+testgasrich.pdf
+untitled.pdf
+url.html
+useofeduroam.doc
+wangtg.ppt
+《安珀志》系列（奇幻小说史上里程碑之作，史诗级鸿篇巨制，首度完整引进！）（1-10册.epub
+三千佛塔烟云下：东南亚五国文化纪行.epub
+中共中央办公厅转发《中央人才工作协调小组关于实施海外高层次人才引进计划的意见》的通知.doc
+乞力马扎罗的雪.txt
+习近平谈治国理政.pdf
+国士无双.txt
+国家天文台总部任务绩效申请备案表.docx
+国家天文台总部任务绩效申请备案表.pages
+国家自然科学基金 资助项目进展报告[www.51wendang.com].doc
+天津师范大学人事档案（材料）移交流程1129.doc
+天生的烦恼  基因、种族与人类历史_PDF电子书下载 高清 带索引书签目录.pdf
+太阳系后院.docx
+头号玩家.2018.中英字幕￡CMCT无尽
+带一本书去巴黎.mobi
+改善情绪的正念疗法-c78f (1).pdf
+数学是什么.epub
+新文档 2018-03-26.pdf
+是大臣&是首相
+机票20180110.pdf
+毕业证.pdf
+毛姆文集
+留学回国人员证明信息登记表-电子版.xlsx
+美人为馅.txt
+职称评审流程图.pdf
+蚂蜂窝云南.pdf
+谢利智-论文2.pdf
+邀请信-海外青年学者.pdf
+附件1：“走进中国科学院·海外人才行”活动备案名单.xlsx
+预定确认.pdf
+首探黑洞周围的引力红移【编辑】.docx
+首探黑洞周围的引力红移【编辑】.pages
+龙族
+龙族4奥丁之渊.txt
+[XIEs-MacBook-Air:~/Downloads] xie% cd Alembic
+Alembic: No such file or directory.
+[XIEs-MacBook-Air:~/Downloads] xie% locate Alembic
+
+WARNING: The locate database (/var/db/locate.database) does not exist.
+To create the database, run the following command:
+
+  sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
+Please be aware that the database can take some time to generate; once
+the database has been created, this message will no longer appear.
+
+[XIEs-MacBook-Air:~/Downloads] xie% ls Alem\*
+ls: Alem*: No such file or directory
+[XIEs-MacBook-Air:~/Downloads] xie% cd alembic
+alembic: No such file or directory.
+[XIEs-MacBook-Air:~/Downloads] xie% ls alembic
+ls: alembic: No such file or directory
+[XIEs-MacBook-Air:~/Downloads] xie% cd
+[XIEs-MacBook-Air:~] xie% cd Desktop/
+[XIEs-MacBook-Air:~/Desktop] xie% ls
+Screen Shot 2018-02-01 at 21.04.14.png
+YoudaoNote.dmg
+comments_rampressure.pages
+download_resize_jpg.jpeg
+jsonp_send.dms
+入职报告.pdf
+屏幕快照 2018-03-28 04.15.50 PM.png
+屏幕快照 2018-03-28 04.22.54 PM.png
+屏幕快照 2018-06-04 08.06.07 AM.png
+屏幕快照 2018-06-08 02.50.50 PM.png
+屏幕快照 2018-06-27 01.37.38 PM.png
+屏幕快照 2018-06-27 02.46.12 PM.png
+屏幕快照 2018-06-27 05.18.55 PM.png
+屏幕快照 2018-06-30 05.26.20 PM.png
+屏幕快照 2018-06-30 05.26.33 PM.png
+屏幕快照 2018-07-02 09.56.03 PM.png
+屏幕快照 2018-07-02 09.56.44 PM.png
+屏幕快照 2018-07-02 10.23.40 PM.png
+屏幕快照 2018-07-02 10.37.42 PM.png
+屏幕快照 2018-07-03 10.34.31 PM.png
+屏幕快照 2018-07-03 10.34.54 PM.png
+屏幕快照 2018-07-03 10.37.51 PM.png
+屏幕快照 2018-07-03 12.37.43 PM.png
+屏幕快照 2018-07-03 12.38.06 PM.png
+屏幕快照 2018-07-03 12.38.25 PM.png
+屏幕快照 2018-07-03 12.38.41 PM.png
+屏幕快照 2018-07-03 12.38.55 PM.png
+屏幕快照 2018-07-03 12.39.04 PM.png
+屏幕快照 2018-07-17 07.58.57 AM.png
+屏幕快照 2018-07-23 01.47.54 PM.png
+屏幕快照 2018-07-23 02.35.12 PM.png
+屏幕快照 2018-07-23 03.01.47 PM.png
+屏幕快照 2018-07-23 06.05.36 PM.png
+屏幕快照 2018-07-23 11.25.43 PM.png
+屏幕快照 2018-07-24 10.29.43 AM.png
+屏幕快照 2018-07-27 07.28.19 PM.png
+屏幕快照 2018-08-02 05.07.34 PM.png
+屏幕快照 2018-08-02 05.08.10 PM.png
+屏幕快照 2018-08-13 11.41.26 AM.png
+屏幕快照 2018-08-17 12.03.45 PM.png
+屏幕快照 2018-08-20 09.03.22 AM.png
+屏幕快照 2018-08-21 12.48.22 PM.png
+屏幕快照 2018-08-23 05.57.31 PM.png
+屏幕快照 2018-08-24 04.39.09 PM.png
+屏幕快照 2018-08-27 08.58.31 AM.png
+留学回国人员证明信息登记表-电子版.numbers
+身份证.jpg
+黑洞gravity.docx
+黑洞gravity.pages
+[XIEs-MacBook-Air:~/Desktop] xie% cd 
+[XIEs-MacBook-Air:~] xie% cd Documents/
+[XIEs-MacBook-Air:~/Documents] xie% cd GitHub/
+[XIEs-MacBook-Air:~/Documents/GitHub] xie% ls
+alembic
+[XIEs-MacBook-Air:~/Documents/GitHub] xie% cd alembic/
+[XIEs-MacBook-Air:~/Documents/GitHub/alembic] xie% ls
+404.md				_layouts			elements.md
+CNAME				_posts				index.md
+Gemfile				_sass				offline.md
+LICENSE				alembic-jekyll-theme.gemspec	screenshot.png
+README.md			assets				search.md
+_config.yml			blog				thanks.md
+_includes			categories.md
+[XIEs-MacBook-Air:~/Documents/GitHub/alembic] xie% cd _includes/
+[XIEs-MacBook-Air:GitHub/alembic/_includes] xie% ls
+button.html		nav-share.html		site-analytics.html	site-logo.html
+figure.html		nav-social.html		site-aside.html		site-search.html
+icon.html		post-categories.html	site-favicons.html	site-styles.html
+map.html		post-comments.html	site-feature.html	site-sw.html
+nav-categories.html	post-list.html		site-footer.html	video.html
+nav-default.html	post-meta.html		site-form.html
+nav-footer.html		post-pagination.html	site-header.html
+nav-header.html		post-related.html	site-icons.svg
+[XIEs-MacBook-Air:GitHub/alembic/_includes] xie% vi button.html 
+[XIEs-MacBook-Air:GitHub/alembic/_includes] xie% vi figure.html
+[XIEs-MacBook-Air:GitHub/alembic/_includes] xie% cd ..
+[XIEs-MacBook-Air:~/Documents/GitHub/alembic] xie% ls
+404.md				_layouts			elements.md
+CNAME				_posts				index.md
+Gemfile				_sass				offline.md
+LICENSE				alembic-jekyll-theme.gemspec	screenshot.png
+README.md			assets				search.md
+_config.yml			blog				thanks.md
+_includes			categories.md
+[XIEs-MacBook-Air:~/Documents/GitHub/alembic] xie% ls _layouts
+blog.html	categories.html	default.html	page.html	post.html
+[XIEs-MacBook-Air:~/Documents/GitHub/alembic] xie% vi blog.html
+[XIEs-MacBook-Air:~/Documents/GitHub/alembic] xie% vi _layouts/blog.html
+[XIEs-MacBook-Air:~/Documents/GitHub/alembic] xie% cd _layouts/
+[XIEs-MacBook-Air:GitHub/alembic/_layouts] xie% ls
+blog.html	categories.html	default.html	page.html	post.html
+[XIEs-MacBook-Air:GitHub/alembic/_layouts] xie% vi post.html
+[XIEs-MacBook-Air:GitHub/alembic/_layouts] xie% vi categories.html
+[XIEs-MacBook-Air:GitHub/alembic/_layouts] xie% vi default.html
+[XIEs-MacBook-Air:GitHub/alembic/_layouts] xie% vi page.html
+[XIEs-MacBook-Air:GitHub/alembic/_layouts] xie% ls
+blog.html	categories.html	default.html	page.html	post.html
+[XIEs-MacBook-Air:GitHub/alembic/_layouts] xie% cd ..
+[XIEs-MacBook-Air:~/Documents/GitHub/alembic] xie% ls
+404.md				README.md			_posts				blog				offline.md
+CNAME				_config.yml			_sass				categories.md			screenshot.png
+Gemfile				_includes			alembic-jekyll-theme.gemspec	elements.md			search.md
+LICENSE				_layouts			assets				index.md			thanks.md
+[XIEs-MacBook-Air:~/Documents/GitHub/alembic] xie% cd _config.yml
+_config.yml: Not a directory.
+[XIEs-MacBook-Air:~/Documents/GitHub/alembic] xie% vi _config.yml 
+
+      image: "/assets/default-social-image.png" # Default image for sharing
+
+# 7. Site settings
+encoding: utf-8 # Make sure the encoding is right
+lang: en-GB # Set the site language
+title: "Alembic" # Site name or title, also used in jekyll-seo-tag
+logo: "/assets/logo.svg" # Site logo, also used in jekyll-seo-tag
+description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
+url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+baseurl: ""
+repo: "https://github.com/daviddarnes/alembic"
+email: "me@daviddarnes.com"
+# disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
+avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # Uses avatars for favicons to get multple sites, eg Gravatar, Twitter, GitHub
+# google_analytics: ''
+# service_worker: false # Will turn off the service worker if set to false
+css_inline: true # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+
+# 8. Site navigation
+navigation_header:
+  Home: /
+  Elements: /elements/
+  Blog: /blog/
+  Categories: /categories/
+  Search: /search/
+  Fork Alembic: https://github.com/daviddarnes/alembic
+
+navigation_footer:
+  Created by David Darnes: https://darn.es
+
+social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
+  Twitter: https://twitter.com/DavidDarnes
+  LinkedIn: https://www.linkedin.com/in/daviddarnes
+  Google+: https://plus.google.com/+DavidDarnes
+  GitHub: https://github.com/daviddarnes
+  link: https://darn.es
+  RSS: /feed.xml
+
+sharing_links: # Appear at the bottom of single blog posts, uncomment and comment out as desired. Colours set the button colour
+  Twitter: "#0d94e7"
+  facebook: "#3B5998"
+  Google+: "#DC4E41"
+  # Pinterest: "#BD081C"
+  # LinkedIn: "#0077B5"
+  # tumblr: "#36465D"
+  # Reddit: "#FF4500"
+  # Hacker News: "#ff6600"
+  # Designer News: "#2D72D9"
+  # Email: ""
